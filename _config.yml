@@ -4,6 +4,9 @@ description: A Model Context Protocol server for tabletop RPG game masters, host
 url: https://tedtschopp.github.io
 baseurl: /MCP-Server-Using-Github-Pages
 
+# GitHub repository (required for GitHub Pages)
+repository: TedTschopp/MCP-Server-Using-Github-Pages
+
 # Build settings
 markdown: kramdown
 theme: minima
