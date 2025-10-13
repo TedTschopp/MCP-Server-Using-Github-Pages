@@ -4,9 +4,10 @@ layout: null
 {
   "version": "1.0.0",
   "name": "ttrpg-gm-tools",
-  "description": "TTRPG GM Tools - A Model Context Protocol server for tabletop RPG game masters",
+  "description": "TTRPG GM Tools - A Model Context Protocol server for tabletop RPG game masters. This is the server manifest. The actual MCP server endpoint is at {{ site.url }}{{ site.baseurl }}/mcp",
   "vendor": "TedTschopp",
   "homepage": "{{ site.url }}{{ site.baseurl }}",
+  "serverEndpoint": "{{ site.url }}{{ site.baseurl }}/mcp",
   "protocol": {
     "version": "2024-11-05"
   },
@@ -16,11 +17,13 @@ layout: null
     "prompts": {}
   },
   "transport": {
-    "type": "sse",
-    "endpoints": {
-      "tools": "{{ site.url }}{{ site.baseurl }}/api/tools.json",
-      "resources": "{{ site.url }}{{ site.baseurl }}/api/resources.json",
-      "prompts": "{{ site.url }}{{ site.baseurl }}/api/prompts.json"
-    }
+    "type": "http",
+    "note": "This server uses HTTP transport via Cloudflare Worker, not SSE"
+  },
+  "implementation": {
+    "architecture": "hybrid",
+    "dataLayer": "{{ site.url }}{{ site.baseurl }}/data/",
+    "serverLayer": "{{ site.url }}{{ site.baseurl }}/mcp",
+    "description": "Data hosted on GitHub Pages, MCP protocol implemented via Cloudflare Worker"
   }
 }

@@ -3,50 +3,78 @@
 
 ## Architecture
 
-This MCP server is built entirely with static files that can be hosted on GitHub Pages:
+This MCP server uses a **hybrid architecture** combining GitHub Pages (for data hosting) and Cloudflare Workers (for MCP protocol implementation):
+
+### System Components
+
+1. **GitHub Pages (Data Layer)**
+   - Hosts static TTRPG data in `/data/*.json`
+   - Serves documentation and website
+   - Free, globally distributed via GitHub's CDN
+
+2. **Cloudflare Worker (Server Layer)**
+   - Implements the MCP protocol over HTTP
+   - Handles JSON-RPC 2.0 requests
+   - Fetches data from GitHub Pages on-demand
+   - Executes tool logic (random selection, generation)
+   - Deployed at: `https://ttrpg-mcp.tedt.org/mcp`
 
 ### File Structure
-- `mcp.json` - Main MCP manifest with server metadata
-- `api/tools.json` - Tool definitions and schemas
-- `api/resources.json` - Resource definitions
-- `api/prompts.json` - Prompt templates
-- `_data/*.json` - Source data for generators
+
+**GitHub Pages:**
+- `data/*.json` - Public TTRPG data (encounters, names, locations, etc.)
+- `_data/*.json` - Source data for Jekyll processing
+- `mcp.json` - Server manifest and documentation
+- `api/*.json` - Tool/resource/prompt schemas (for reference)
+- Documentation pages (README, guides, etc.)
+
+**Cloudflare Worker:**
+- `cloudflare-mcp-server/src/index.js` - Full MCP server implementation
+- `cloudflare-mcp-server/wrangler.toml` - Worker configuration
+- Implements: `initialize`, `tools/list`, `tools/call`, `resources/list`, `resources/read`, `prompts/list`, `prompts/get`
 
 ### How It Works
 
-1. **Static Data**: All TTRPG data (encounters, names, etc.) is stored in JSON files in `_data/`
-2. **Jekyll Processing**: Jekyll/Liquid templates process the data at build time
-3. **MCP Endpoints**: The API files define MCP-compliant tool schemas
-4. **Client Integration**: MCP clients read the manifest and tool definitions
-
-### Limitations
-
-Since GitHub Pages only supports static hosting:
-- **No server-side logic**: All generation must happen client-side
-- **No real-time data**: Data is static until the site is rebuilt
-- **No state management**: Each request is independent
-
-### Implementation Strategy
-
-For a true MCP server, the client (like Claude Desktop) would:
-1. Read the tool schemas from `api/tools.json`
-2. Fetch data from the `_data` JSON files
-3. Implement the generation logic using the provided data
-4. Return results to the AI model
-
-### Alternative: Proxy Server
-
-For full MCP functionality, you could create a separate proxy server that:
-- Reads from these static GitHub Pages endpoints
-- Implements the actual generation logic
-- Provides proper MCP protocol responses
-
-Example proxy architecture:
 ```
-[MCP Client] → [Proxy Server] → [GitHub Pages Data]
-                     ↓
-              Generation Logic
+┌─────────────┐         ┌──────────────────┐         ┌─────────────────┐
+│ MCP Client  │ ─HTTP──→│ Cloudflare Worker│ ─GET───→│  GitHub Pages   │
+│ (VS Code,   │ ←JSON──┤ (MCP Protocol)    │ ←JSON──┤  (Data Files)   │
+│  Claude)    │         │  /mcp endpoint    │         │  /data/*.json   │
+└─────────────┘         └──────────────────┘         └─────────────────┘
+                                 │
+                        JSON-RPC 2.0 Protocol
+                        • initialize
+                        • tools/list, tools/call
+                        • resources/list, resources/read
+                        • prompts/list, prompts/get
 ```
+
+### Request Flow Example
+
+1. **Client connects**: Sends `initialize` method to `/mcp`
+2. **Worker responds**: Returns capabilities (tools, resources, prompts)
+3. **Client requests tools**: Sends `tools/list` method
+4. **Worker returns**: 7 tool definitions
+5. **Client calls tool**: `tools/call` with `generate_npc_name`
+6. **Worker fetches data**: Gets `names.json` from GitHub Pages
+7. **Worker generates**: Randomly selects a name
+8. **Worker returns**: JSON-RPC response with result
+
+### Why This Architecture?
+
+**Advantages:**
+- ✅ **Free hosting**: Both GitHub Pages and Cloudflare Workers have generous free tiers
+- ✅ **Global distribution**: CDN on both layers for fast access worldwide
+- ✅ **Full MCP protocol**: Proper JSON-RPC 2.0 implementation
+- ✅ **Scalable**: Can handle thousands of requests
+- ✅ **Version controlled**: All data and code in Git
+- ✅ **No database needed**: Static JSON files are sufficient
+- ✅ **Easy updates**: Push to GitHub to update data, deploy worker for code changes
+
+**Limitations:**
+- ⚠️ **Read-only**: Cannot modify data from the MCP client
+- ⚠️ **No state persistence**: Each request is independent
+- ⚠️ **Static data**: Requires rebuild/deploy to update
 
 ### Future Enhancements
 

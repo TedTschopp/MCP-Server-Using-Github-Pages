@@ -43,8 +43,10 @@ Once deployed, add this to your MCP client configuration (e.g., Claude Desktop):
 {
   "mcpServers": {
     "ttrpg-gm-tools": {
-      "url": "https://ttrpg-mcp.tedt.org/mcp.json",
-      "transport": "sse"
+      "url": "https://ttrpg-mcp.tedt.org/mcp",
+      "transport": {
+        "type": "http"
+      }
     }
   }
 }

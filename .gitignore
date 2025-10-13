@@ -16,3 +16,4 @@ yarn-error.log
 # Cloudflare Workers
 cloudflare-mcp-server/.wrangler/
 cloudflare-mcp-server/dist/
+.playwright-mcp/

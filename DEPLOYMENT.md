@@ -76,7 +76,7 @@ Restart your MCP client to load the new server.
 
 - [ ] GitHub Pages deployed successfully
 - [ ] Can access `https://ttrpg-mcp.tedt.org/`
-- [ ] Can view data files at `https://ttrpg-mcp.tedt.org/_data/encounters.json`
+- [ ] Can view data files at `https://ttrpg-mcp.tedt.org/data/encounters.json`
 - [ ] Cloudflare Worker deployed successfully
 - [ ] Custom domain route configured
 - [ ] Can POST to `https://ttrpg-mcp.tedt.org/mcp`
@@ -95,7 +95,7 @@ This means your MCP client is trying to use SSE transport. Make sure:
 
 Check that:
 - GitHub Pages is deployed and accessible
-- Data files exist at `https://ttrpg-mcp.tedt.org/_data/*.json`
+- Data files exist at `https://ttrpg-mcp.tedt.org/data/*.json`
 - Cloudflare Worker can access GitHub Pages (check CORS)
 
 ### Worker not responding
