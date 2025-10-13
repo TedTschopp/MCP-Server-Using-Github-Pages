@@ -133,6 +133,10 @@ This server uses a hybrid architecture:
 - [Project Structure](PROJECT_STRUCTURE.html) - File organization
 - [Cloudflare Worker](cloudflare-mcp-server/) - Server implementation
 
+## 🔗 Links
+
+- [GitHub Repository](https://github.com/TedTschopp/MCP-Server-Using-Github-Pages) - View source code and contribute
+
 ---
 
 Built with ❤️ for Game Masters everywhere! 🎲
