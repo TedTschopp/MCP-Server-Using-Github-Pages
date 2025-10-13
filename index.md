@@ -1,5 +1,3 @@
-# 🎲 TTRPG GM Tools MCP Server
-
 A **Model Context Protocol** server for tabletop RPG game masters, providing tools for generating encounters, NPCs, locations, and more!
 
 ## 📡 MCP Endpoint
