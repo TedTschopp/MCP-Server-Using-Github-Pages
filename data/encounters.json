@@ -1,0 +1,109 @@
+{
+  "encounters": {
+    "forest": {
+      "easy": [
+        { "name": "Wandering Wolves", "creatures": "1d4 Wolves", "description": "A small pack of hungry wolves stalks through the undergrowth" },
+        { "name": "Giant Spiders", "creatures": "1d2 Giant Spiders", "description": "Massive spiders with webs strung between the trees" },
+        { "name": "Bandit Scout", "creatures": "1 Bandit + 1d2 Bandits", "description": "Bandits setting up an ambush on the forest trail" }
+      ],
+      "medium": [
+        { "name": "Owlbear", "creatures": "1 Owlbear", "description": "A territorial owlbear defending its hunting grounds" },
+        { "name": "Bandit Ambush", "creatures": "1 Bandit Captain + 2d4 Bandits", "description": "Well-organized bandits spring from hiding" },
+        { "name": "Dire Wolves", "creatures": "1d3 Dire Wolves", "description": "Massive wolves coordinating their attack" }
+      ],
+      "hard": [
+        { "name": "Young Green Dragon", "creatures": "1 Young Green Dragon", "description": "A cunning dragon seeking to expand its territory" },
+        { "name": "Troll", "creatures": "1 Troll", "description": "A regenerating troll hungry for flesh" },
+        { "name": "Yuan-ti Patrol", "creatures": "1 Yuan-ti Malison + 2d4 Yuan-ti Purebloods", "description": "Snake people on a dark mission" }
+      ],
+      "deadly": [
+        { "name": "Adult Green Dragon", "creatures": "1 Adult Green Dragon", "description": "An ancient terror of the forest awakens" },
+        { "name": "Treant Guardian", "creatures": "1 Treant + 2d6 Awakened Trees", "description": "The forest itself rises to defend against intruders" }
+      ]
+    },
+    "dungeon": {
+      "easy": [
+        { "name": "Giant Rats", "creatures": "2d6 Giant Rats", "description": "Diseased rats swarm from the darkness" },
+        { "name": "Skeletons", "creatures": "1d6 Skeletons", "description": "Ancient bones animated by dark magic" },
+        { "name": "Goblin Guards", "creatures": "1d4+2 Goblins", "description": "Small green humanoids guarding their post" }
+      ],
+      "medium": [
+        { "name": "Ochre Jelly", "creatures": "1 Ochre Jelly", "description": "An acidic ooze sliding down the corridor" },
+        { "name": "Hobgoblin Patrol", "creatures": "1 Hobgoblin + 2d4 Goblins", "description": "Disciplined warriors on patrol" },
+        { "name": "Gelatinous Cube", "creatures": "1 Gelatinous Cube", "description": "A transparent ooze filling the hallway" }
+      ],
+      "hard": [
+        { "name": "Medusa", "creatures": "1 Medusa", "description": "A snake-haired creature with a petrifying gaze" },
+        { "name": "Stone Golems", "creatures": "1d2 Stone Golems", "description": "Magical constructs guarding ancient treasure" },
+        { "name": "Mind Flayer", "creatures": "1 Mind Flayer + 1d4 Intellect Devourers", "description": "An illithid with its brain-eating servants" }
+      ],
+      "deadly": [
+        { "name": "Beholder", "creatures": "1 Beholder", "description": "A many-eyed aberration in its lair" },
+        { "name": "Lich", "creatures": "1 Lich", "description": "An undead spellcaster of terrible power" }
+      ]
+    },
+    "city": {
+      "easy": [
+        { "name": "Thugs", "creatures": "1d4 Thugs", "description": "Street toughs looking for easy marks" },
+        { "name": "Cultists", "creatures": "1d6 Cultists", "description": "Robed figures conducting a ritual" },
+        { "name": "Guard Corruption", "creatures": "2d4 Guards (hostile)", "description": "Corrupt guards shaking down citizens" }
+      ],
+      "medium": [
+        { "name": "Assassin", "creatures": "1 Assassin", "description": "A hired killer stalking their target" },
+        { "name": "Cult Fanatics", "creatures": "1 Cult Fanatic + 2d4 Cultists", "description": "Zealots spreading their dark faith" },
+        { "name": "Spy Ring", "creatures": "1 Spy + 1d4 Thugs", "description": "Information brokers with muscle" }
+      ],
+      "hard": [
+        { "name": "Vampire Spawn", "creatures": "1d4 Vampire Spawn", "description": "Undead servants of a vampire lord" },
+        { "name": "Rakshasa", "creatures": "1 Rakshasa", "description": "A fiend disguised as a noble" },
+        { "name": "Crime Lord", "creatures": "1 Bandit Captain + 2d6 Thugs + 1 Assassin", "description": "Organized crime enforcing their territory" }
+      ],
+      "deadly": [
+        { "name": "Vampire Lord", "creatures": "1 Vampire + 2d4 Vampire Spawn", "description": "An ancient vampire and their spawn" },
+        { "name": "Archmage Duel", "creatures": "1 Archmage", "description": "A powerful wizard gone rogue" }
+      ]
+    },
+    "mountain": {
+      "easy": [
+        { "name": "Mountain Goats", "creatures": "1d6 Goats (hostile if provoked)", "description": "Territorial goats protecting their ledge" },
+        { "name": "Kobolds", "creatures": "2d6 Kobolds", "description": "Small dragon-worshipping reptiles" },
+        { "name": "Eagles", "creatures": "1d3 Giant Eagles", "description": "Massive predatory birds" }
+      ],
+      "medium": [
+        { "name": "Manticore", "creatures": "1 Manticore", "description": "A lion with bat wings and spiked tail" },
+        { "name": "Yetis", "creatures": "1d3 Yetis", "description": "White-furred abominable snowmen" },
+        { "name": "Wyvern", "creatures": "1 Wyvern", "description": "A lesser dragon with a poisonous tail" }
+      ],
+      "hard": [
+        { "name": "Young Red Dragon", "creatures": "1 Young Red Dragon", "description": "A greedy dragon guarding its hoard" },
+        { "name": "Stone Giant", "creatures": "1 Stone Giant", "description": "A massive giant hurling boulders" },
+        { "name": "Roc", "creatures": "1 Roc", "description": "A gargantuan bird of prey" }
+      ],
+      "deadly": [
+        { "name": "Adult Red Dragon", "creatures": "1 Adult Red Dragon", "description": "A devastating wyrm of fire and greed" },
+        { "name": "Storm Giant", "creatures": "1 Storm Giant", "description": "A godlike giant commanding the weather" }
+      ]
+    },
+    "swamp": {
+      "easy": [
+        { "name": "Giant Frogs", "creatures": "1d4 Giant Frogs", "description": "Massive amphibians with swallowing attacks" },
+        { "name": "Stirges", "creatures": "2d6 Stirges", "description": "Blood-sucking flying creatures" },
+        { "name": "Bullywugs", "creatures": "2d4 Bullywugs", "description": "Frog-like humanoids defending their marsh" }
+      ],
+      "medium": [
+        { "name": "Trolls", "creatures": "1d2 Trolls", "description": "Regenerating monsters lurking in the muck" },
+        { "name": "Shambling Mound", "creatures": "1 Shambling Mound", "description": "A mobile mass of vegetation" },
+        { "name": "Green Hag", "creatures": "1 Green Hag", "description": "A cunning and cruel fey creature" }
+      ],
+      "hard": [
+        { "name": "Hydra", "creatures": "1 Hydra", "description": "A multi-headed serpentine monster" },
+        { "name": "Yuan-ti Abomination", "creatures": "1 Yuan-ti Abomination + 1d6 Yuan-ti Purebloods", "description": "Snake people led by a powerful priest" },
+        { "name": "Coven of Hags", "creatures": "3 Green Hags", "description": "A trio of hags with combined magical power" }
+      ],
+      "deadly": [
+        { "name": "Black Dragon", "creatures": "1 Adult Black Dragon", "description": "A cruel dragon ruling the swamp" },
+        { "name": "Aboleth", "creatures": "1 Aboleth", "description": "An ancient aquatic aberration" }
+      ]
+    }
+  }
+}

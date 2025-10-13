@@ -1,0 +1,11 @@
+name = "ttrpg-mcp-server"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Custom domain (configure in Cloudflare dashboard)
+# routes = [
+#   { pattern = "ttrpg-mcp.tedt.org/mcp/*", zone_name = "tedt.org" }
+# ]
+
+[vars]
+DATA_BASE_URL = "https://ttrpg-mcp.tedt.org/data"

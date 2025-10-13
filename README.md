@@ -1,6 +1,15 @@
 # TTRPG GM Tools MCP Server
 
-A [Model Context Protocol](https://modelcontextprotocol.io/) server for tabletop RPG game masters, hosted entirely on GitHub Pages using static JSON files and Jekyll.
+A [Model Context Protocol](https://modelcontextprotocol.io/) server for tabletop RPG game masters.
+
+## 🏗️ Architecture
+
+This project uses a two-part architecture:
+
+1. **GitHub Pages** - Hosts static data files (encounters, names, treasures, etc.) at `https://ttrpg-mcp.tedt.org/`
+2. **Cloudflare Worker** - Implements the MCP protocol and executes tool logic at `https://ttrpg-mcp.tedt.org/mcp`
+
+> **Note:** GitHub Pages can only serve static files. The MCP protocol requires a real server to handle dynamic requests, which is why we need the Cloudflare Worker.
 
 ## 🎲 Features
 
@@ -16,6 +25,11 @@ This MCP server provides tools for game masters:
 
 ## 🔧 Setup
 
+### Prerequisites
+
+1. **Deploy the Cloudflare Worker** (see `cloudflare-mcp-server/README.md`)
+2. **Configure your MCP client**
+
 ### For MCP Clients (Claude Desktop, etc.)
 
 Add this to your MCP client configuration:
@@ -24,12 +38,17 @@ Add this to your MCP client configuration:
 {
   "mcpServers": {
     "ttrpg-gm-tools": {
-      "url": "https://ttrpg-mcp.tedt.org/mcp.json",
-      "transport": "sse"
+      "url": "https://ttrpg-mcp.tedt.org/mcp",
+      "transport": "http"
     }
   }
 }
 ```
+
+**Important:** 
+- The URL is `https://ttrpg-mcp.tedt.org/mcp` (not `mcp.json`)
+- Transport is `http` (not `sse`)
+- You must deploy the Cloudflare Worker first (see `cloudflare-mcp-server/` folder)
 
 ### Local Development
 

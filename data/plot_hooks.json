@@ -1,0 +1,100 @@
+{
+  "plot_hooks": {
+    "mystery": [
+      "A series of murders occurs in town, all victims found with a strange symbol carved into their foreheads",
+      "An ancient artifact goes missing from the local museum, but there are no signs of forced entry",
+      "People in town start having the same nightmare, and those who ignore it vanish without a trace",
+      "A noble's daughter has gone missing, but her room shows no signs of struggle - just a single black feather",
+      "Ships have been disappearing in the harbor with no wreckage ever found",
+      "A renowned scholar was found dead in a locked study, surrounded by burned books",
+      "Children's imaginary friends have started appearing as real entities",
+      "A mirror in an abandoned house shows reflections of people who aren't there",
+      "The town's wells have run dry, but nearby streams still flow normally",
+      "A messenger arrives with a cryptic warning but dies before explaining who sent them"
+    ],
+    "combat": [
+      "Goblin raiders have been attacking merchant caravans on the main road",
+      "A dragon has claimed the nearby mountain and demands tribute from the town",
+      "An orc warband is gathering in the foothills, preparing for invasion",
+      "Undead have risen from the old cemetery and are attacking at night",
+      "A gladiatorial arena seeks new champions for increasingly dangerous fights",
+      "Bandits have taken over the fortress controlling the only pass through the mountains",
+      "A powerful demon has been summoned and now terrorizes the countryside",
+      "Two rival guilds are on the brink of open warfare in the streets",
+      "Giants have descended from the mountains and are raiding farms",
+      "An ancient evil has awakened in the depths below the city"
+    ],
+    "intrigue": [
+      "The party discovers a plot to assassinate the king during the upcoming festival",
+      "A powerful merchant guild is secretly controlled by a criminal organization",
+      "The party intercepts a letter revealing a spy network within the royal court",
+      "A noble house seeks to frame another noble for treason",
+      "An election for mayor is rigged by competing secret societies",
+      "The party discovers the high priest is actually a devil in disguise",
+      "A forbidden romance between heirs of rival kingdoms could start a war",
+      "Someone is blackmailing multiple members of the city council",
+      "The party uncovers a conspiracy to replace key officials with doppelgangers",
+      "A revolutionary group plans to overthrow the government during a masquerade ball"
+    ],
+    "exploration": [
+      "An ancient map surfaces showing the location of a legendary lost city",
+      "Earthquakes have revealed a massive underground complex beneath the city",
+      "A dying explorer speaks of a paradise beyond the forbidden mountains",
+      "Strange lights appear nightly in the unexplored forest to the north",
+      "A new continent has been discovered across the sea",
+      "The party receives a key with no lock and a riddle pointing to a hidden door",
+      "An old sailor speaks of an island that only appears once every century",
+      "Cave paintings in a recently discovered cavern depict advanced ancient technology",
+      "A magical storm has revealed ruins that were previously hidden by illusion",
+      "The party finds a portal to an unknown plane of existence"
+    ],
+    "horror": [
+      "Villagers are being turned into mindless husks, muttering about 'the hunger'",
+      "A fog rolls in at night, and anyone caught in it is never seen again",
+      "The party discovers that all the children in a village have the same face",
+      "A mansion appears overnight where there was only empty land before",
+      "People are disappearing, only to return days later with no memory and strange marks",
+      "The dead refuse to stay buried in a particular cemetery",
+      "A cursed item is passed from person to person, bringing doom to each owner",
+      "Shadows have been seen moving independently of their casters",
+      "A parasitic entity is spreading through town, taking control of its hosts",
+      "Reality seems to be breaking down in a specific location, with impossible geometries appearing"
+    ],
+    "comedy": [
+      "A wizard's spell goes wrong, turning the party into various farm animals",
+      "The party must protect a pompous noble who constantly puts himself in danger",
+      "A love potion affects the wrong people, creating chaos at a wedding",
+      "The party must compete in a series of ridiculous contests to win a prize",
+      "A shapeshifter keeps impersonating party members, causing confusion",
+      "The party accidentally releases a mischievous fey creature that won't leave them alone",
+      "A case of mistaken identity leads the party into increasingly absurd situations",
+      "The party must babysit a group of young bards-in-training",
+      "A cursed item causes everyone nearby to speak only in rhyme",
+      "The party becomes involved in a town's annual 'foolish traditions' festival"
+    ],
+    "romance": [
+      "The party must reunite two star-crossed lovers separated by feuding families",
+      "A love letter falls into the wrong hands, threatening to cause a scandal",
+      "The party discovers a magical matchmaking service with sinister ulterior motives",
+      "A powerful entity has fallen in love with a party member",
+      "The party must protect a wedding from those who would sabotage it",
+      "A cursed prince/princess seeks true love's kiss to break their spell",
+      "The party finds a magical rose that reveals one's true love when given as a gift",
+      "A lonely immortal seeks the party's help in courting someone special",
+      "The party must navigate complex social customs to arrange a marriage alliance",
+      "A bard's love song has literally come to life and is causing chaos"
+    ],
+    "rescue": [
+      "A child has been kidnapped by creatures from the Feywild",
+      "Miners are trapped in a collapsed shaft with air running out",
+      "A ship full of refugees is being held hostage by pirates",
+      "The princess has been captured by a dragon (but she doesn't want to be rescued)",
+      "A scholar went into the ruins and hasn't returned",
+      "A entire village has been taken captive by slavers",
+      "Someone important is trapped in a magical prison",
+      "A caravan is surrounded by hostile forces and needs relief",
+      "Hostages are being held in a building that's on fire",
+      "An airship has crashed in hostile territory with survivors aboard"
+    ]
+  }
+}

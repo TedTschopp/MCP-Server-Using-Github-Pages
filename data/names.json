@@ -1,0 +1,136 @@
+{
+  "names": {
+    "human": {
+      "male": [
+        "Aldric", "Baern", "Cedric", "Dorian", "Erik", "Finn", "Gareth", "Hadrian", "Igor", "Jasper",
+        "Kellan", "Lucian", "Marcus", "Nathaniel", "Orion", "Pierce", "Quinn", "Roland", "Sebastian", "Theron",
+        "Ulric", "Victor", "Wilhelm", "Xavier", "Yorick", "Zane", "Aldwin", "Brennan", "Callum", "Duncan"
+      ],
+      "female": [
+        "Aria", "Beatrice", "Celeste", "Diana", "Elara", "Fiona", "Gwendolyn", "Helena", "Iris", "Jade",
+        "Kira", "Luna", "Mira", "Nora", "Olivia", "Petra", "Quinn", "Rosa", "Selene", "Thalia",
+        "Una", "Vera", "Wren", "Xena", "Yara", "Zara", "Astrid", "Brynn", "Cora", "Delia"
+      ]
+    },
+    "elf": {
+      "male": [
+        "Aelrindel", "Belanor", "Celeborn", "Daeron", "Erevan", "Faelar", "Galaeron", "Hadarai", "Isilme", "Jorildyn",
+        "Keldorn", "Laucian", "Merellien", "Naertho", "Olarys", "Phaendar", "Quarion", "Rolen", "Silvyr", "Thamior",
+        "Uthemar", "Vaeril", "Wrathran", "Xhalien", "Yalathanil", "Zoar", "Aerendyl", "Beluar", "Cornaith", "Dayereth"
+      ],
+      "female": [
+        "Aelwen", "Belanore", "Caelynn", "Daela", "Elenwe", "Faelwen", "Galadriel", "Holone", "Ilmare", "Jelenneth",
+        "Keyleth", "Leshanna", "Meriele", "Naevys", "Olortynnal", "Phaerl", "Quelenna", "Rathiain", "Sylvaen", "Tarasynora",
+        "Ulesse", "Valanthe", "Wynnlarae", "Xharlion", "Yaereene", "Zylrie", "Aerilaya", "Bellaluna", "Caerthynna", "Delshandra"
+      ]
+    },
+    "dwarf": {
+      "male": [
+        "Adrik", "Baern", "Bruenor", "Darek", "Eberk", "Fargrim", "Gardain", "Harbek", "Kildrak", "Morgran",
+        "Orsik", "Rangrim", "Taklinn", "Thoradin", "Ulfgar", "Vondal", "Barendd", "Brottor", "Dain", "Darrak",
+        "Delg", "Gimli", "Tordek", "Rurik", "Oskar", "Thromdur", "Vistra", "Beldin", "Carric", "Druingar"
+      ],
+      "female": [
+        "Amber", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Gurdis", "Helja", "Kathra", "Kristryd",
+        "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Vistra", "Artin", "Audhild", "Bardryn",
+        "Dagnal", "Gunnloda", "Hlin", "Ilde", "Jarana", "Kotri", "Lupp", "Mardred", "Riswynn", "Torbera"
+      ]
+    },
+    "halfling": {
+      "male": [
+        "Alton", "Beau", "Cade", "Eldon", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Neddy",
+        "Osborn", "Perrin", "Reed", "Roscoe", "Wellby", "Cedric", "Corrin", "Errich", "Garth", "Lazam",
+        "Ostran", "Reed", "Shardon", "Ulmo", "Wenner", "Beau", "Cade", "Eldon", "Garret", "Lyle"
+      ],
+      "female": [
+        "Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla",
+        "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna", "Andry", "Bree",
+        "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela"
+      ]
+    },
+    "gnome": {
+      "male": [
+        "Alston", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo",
+        "Gimble", "Jebeddo", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook",
+        "Alston", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo"
+      ],
+      "female": [
+        "Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli",
+        "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana",
+        "Waywocket", "Zanna", "Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell"
+      ]
+    },
+    "half-elf": {
+      "male": [
+        "Alaric", "Brandel", "Corrin", "Devdan", "Eran", "Finnan", "Gareth", "Heldin", "Immeral", "Jaren",
+        "Kellan", "Lucan", "Mirel", "Nolan", "Peren", "Rolen", "Solan", "Tamar", "Uthric", "Valen",
+        "Alaric", "Brandel", "Corrin", "Devdan", "Eran", "Finnan", "Gareth", "Heldin", "Immeral", "Jaren"
+      ],
+      "female": [
+        "Arielle", "Brynn", "Catelyn", "Dara", "Elena", "Faelyn", "Gwendolyn", "Helana", "Ilara", "Jenna",
+        "Keira", "Lyra", "Mara", "Nara", "Olivia", "Petra", "Rhiannon", "Sarra", "Tara", "Vaela",
+        "Arielle", "Brynn", "Catelyn", "Dara", "Elena", "Faelyn", "Gwendolyn", "Helana", "Ilara", "Jenna"
+      ]
+    },
+    "half-orc": {
+      "male": [
+        "Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront",
+        "Shump", "Thokk", "Tarak", "Ugarth", "Volen", "Yurk", "Zed", "Dench", "Feng", "Gell",
+        "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk", "Ugarth"
+      ],
+      "female": [
+        "Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha",
+        "Vola", "Yevelda", "Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka",
+        "Shautha", "Sutha", "Vola", "Yevelda", "Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega"
+      ]
+    },
+    "tiefling": {
+      "male": [
+        "Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai",
+        "Morthos", "Pelaios", "Skamos", "Therai", "Valeth", "Zeth", "Akmenos", "Amnon", "Barakas", "Damakos",
+        "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"
+      ],
+      "female": [
+        "Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia",
+        "Orianna", "Phelaia", "Rieta", "Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista",
+        "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta", "Akta", "Anakis", "Bryseis", "Criella"
+      ]
+    },
+    "dragonborn": {
+      "male": [
+        "Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Mehen", "Nadarr",
+        "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn", "Arjhan", "Balasar", "Bharash",
+        "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Mehen", "Nadarr", "Pandjed", "Patrin", "Rhogar"
+      ],
+      "female": [
+        "Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann",
+        "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit", "Akra", "Biri", "Daar",
+        "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann"
+      ]
+    },
+    "orc": {
+      "male": [
+        "Grak", "Throk", "Drak", "Morg", "Groth", "Ugrok", "Shagrat", "Gorbag", "Bolg", "Azog",
+        "Lagduf", "Snaga", "Muzgash", "Radbug", "Grishnakh", "Mauhur", "Ugluk", "Lugdush", "Grak", "Throk",
+        "Drak", "Morg", "Groth", "Ugrok", "Shagrat", "Gorbag", "Bolg", "Azog", "Lagduf", "Snaga"
+      ],
+      "female": [
+        "Bagra", "Durga", "Gorga", "Mulga", "Rogbut", "Shagdur", "Urzul", "Yazgash", "Bagra", "Durga",
+        "Gorga", "Mulga", "Rogbut", "Shagdur", "Urzul", "Yazgash", "Bagra", "Durga", "Gorga", "Mulga",
+        "Rogbut", "Shagdur", "Urzul", "Yazgash", "Bagra", "Durga", "Gorga", "Mulga", "Rogbut", "Shagdur"
+      ]
+    },
+    "goblin": {
+      "male": [
+        "Grik", "Snig", "Zik", "Brak", "Pik", "Snak", "Grek", "Drik", "Nix", "Rix",
+        "Vex", "Zax", "Bix", "Pox", "Grik", "Snig", "Zik", "Brak", "Pik", "Snak",
+        "Grek", "Drik", "Nix", "Rix", "Vex", "Zax", "Bix", "Pox", "Grik", "Snig"
+      ],
+      "female": [
+        "Grika", "Sniga", "Zika", "Braka", "Pika", "Snaka", "Greka", "Drika", "Nixa", "Rixa",
+        "Vexa", "Zaxa", "Bixa", "Poxa", "Grika", "Sniga", "Zika", "Braka", "Pika", "Snaka",
+        "Greka", "Drika", "Nixa", "Rixa", "Vexa", "Zaxa", "Bixa", "Poxa", "Grika", "Sniga"
+      ]
+    }
+  }
+}
