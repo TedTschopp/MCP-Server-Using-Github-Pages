@@ -219,10 +219,14 @@ This page demonstrates how the TTRPG data can be used directly in a web browser 
         
         try {
             const data = await loadData('weather.json');
-            const conditions = data.weather[climate];
+            const seasons = data.weather[climate];
+            // Pick a random season
+            const seasonKeys = Object.keys(seasons);
+            const randomSeason = seasonKeys[Math.floor(Math.random() * seasonKeys.length)];
+            const conditions = seasons[randomSeason];
             const randomWeather = conditions[Math.floor(Math.random() * conditions.length)];
             
-            resultDiv.innerHTML = `<strong>${randomWeather}</strong>`;
+            resultDiv.innerHTML = `<strong>${randomWeather}</strong> <em>(${randomSeason})</em>`;
             resultDiv.style.display = 'block';
             resultDiv.className = 'result';
         } catch (error) {

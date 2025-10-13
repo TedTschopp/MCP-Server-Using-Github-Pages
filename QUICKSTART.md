@@ -60,7 +60,7 @@ Once deployed, add this to your MCP client configuration (e.g., Claude Desktop):
 
 ## Next Steps
 
-1. **Customize Data**: Edit JSON files in `_data/` to add your own content
+1. **Customize Data**: Edit JSON files in `data/` to add your own content
 2. **Test Locally**: Run `bundle exec jekyll serve` to test changes
 3. **Push Changes**: Commit and push to automatically redeploy
 4. **Expand**: Add more tools, resources, or prompts as needed
@@ -88,17 +88,17 @@ Once deployed, add this to your MCP client configuration (e.g., Claude Desktop):
 ## Adding More Content
 
 ### Add New Encounters
-Edit `_data/encounters.json` and add to the appropriate environment/difficulty array.
+Edit `data/encounters.json` and add to the appropriate environment/difficulty array.
 
 ### Add New Names
-Edit `_data/names.json` and add to the race/gender arrays.
+Edit `data/names.json` and add to the race/gender arrays.
 
 ### Add New Plot Hooks
-Edit `_data/plot_hooks.json` and add to the theme arrays.
+Edit `data/plot_hooks.json` and add to the theme arrays.
 
 ### Add New Tools
-1. Edit `api/tools.json` to define the tool schema
-2. Create data source in `_data/` if needed
-3. Document in README.md
+1. Update the Cloudflare Worker in `cloudflare-mcp-server/src/index.js`
+2. Create data source in `data/` if needed
+3. Document in README.md and demo.md
 
 Happy Gaming! 🎲

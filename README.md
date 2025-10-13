@@ -60,18 +60,19 @@ Add this to your MCP client configuration:
 ## 📁 Structure
 
 ```
-├── _config.yml           # Jekyll configuration
-├── _data/                # JSON data files for generators
-│   ├── encounters.json   # Encounter data
-│   ├── names.json        # NPC names by race
-│   ├── locations.json    # Location names
-│   ├── traits.json       # Personality traits
-│   ├── treasure.json     # Treasure tables
-│   ├── weather.json      # Weather descriptions
-│   └── plot_hooks.json   # Adventure hooks
-├── api/                  # MCP endpoint JSON files
-│   └── tools/            # Tool definitions
-└── index.html            # Landing page
+├── _config.yml              # Jekyll configuration
+├── data/                    # JSON data files for generators
+│   ├── encounters.json      # Encounter data
+│   ├── names.json           # NPC names by race
+│   ├── locations.json       # Location names
+│   ├── traits.json          # Personality traits
+│   ├── treasure.json        # Treasure tables
+│   ├── weather.json         # Weather descriptions
+│   └── plot_hooks.json      # Adventure hooks
+├── cloudflare-mcp-server/   # Cloudflare Worker implementation
+│   └── src/index.js         # MCP server logic
+├── demo.md                  # Interactive demo page
+└── index.md                 # Landing page
 ```
 
 ## 🚀 Usage

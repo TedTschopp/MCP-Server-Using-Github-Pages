@@ -14,12 +14,7 @@ MCP-Server-Using-Github-Pages/
 ├── 🎮 demo.html                    # Interactive demo
 ├── 🔧 mcp.json                     # MCP server manifest
 │
-├── 📁 api/                         # MCP API endpoints
-│   ├── tools.json                  # Tool definitions & schemas
-│   ├── resources.json              # Resource definitions
-│   └── prompts.json                # Prompt templates
-│
-├── 📁 _data/                       # TTRPG data files
+├── 📁 data/                        # TTRPG data files
 │   ├── encounters.json             # Random encounters by environment
 │   ├── names.json                  # NPC names by race/gender
 │   ├── locations.json              # Location name components
@@ -27,6 +22,9 @@ MCP-Server-Using-Github-Pages/
 │   ├── treasure.json               # Treasure tables by CR
 │   ├── weather.json                # Weather descriptions
 │   └── plot_hooks.json             # Adventure hooks by theme
+│
+├── 📁 cloudflare-mcp-server/       # Cloudflare Worker
+│   └── src/index.js                # MCP server implementation
 │
 └── 📁 .github/                     # GitHub configuration
     └── workflows/
@@ -52,8 +50,8 @@ MCP-Server-Using-Github-Pages/
 │  └─────────────┘                                      │
 │                                                        │
 │  ┌─────────────┐         ┌──────────────┐            │
-│  │ _data/      │────────▶│  Jekyll      │            │
-│  │ *.json      │         │  (build)     │            │
+│  │ data/       │────────▶│  Static      │            │
+│  │ *.json      │         │  Files       │            │
 │  └─────────────┘         └──────────────┘            │
 │                                                        │
 └────────────────────────────────────────────────────────┘
@@ -181,24 +179,23 @@ MCP-Server-Using-Github-Pages/
 ## Contributing Guide
 
 ### Adding New Encounters
-1. Open `_data/encounters.json`
+1. Open `data/encounters.json`
 2. Find the environment and difficulty
 3. Add object with: `name`, `creatures`, `description`
 4. Commit and push
 
 ### Adding New Names
-1. Open `_data/names.json`
+1. Open `data/names.json`
 2. Navigate to race → gender
 3. Add names to array
 4. Maintain alphabetical order (optional)
 5. Commit and push
 
 ### Adding New Tools
-1. Define schema in `api/tools.json`
-2. Create/update data in `_data/`
-3. Update `api/resources.json` if needed
-4. Document in README.md
-5. Add to index.html showcase
+1. Update Cloudflare Worker code in `cloudflare-mcp-server/src/index.js`
+2. Create/update data in `data/`
+3. Document in README.md
+4. Add to demo.md if interactive demo needed
 
 ## License & Credits
 

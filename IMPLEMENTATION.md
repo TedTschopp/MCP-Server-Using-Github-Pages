@@ -23,10 +23,9 @@ This MCP server uses a **hybrid architecture** combining GitHub Pages (for data 
 
 **GitHub Pages:**
 - `data/*.json` - Public TTRPG data (encounters, names, locations, etc.)
-- `_data/*.json` - Source data for Jekyll processing
 - `mcp.json` - Server manifest and documentation
-- `api/*.json` - Tool/resource/prompt schemas (for reference)
 - Documentation pages (README, guides, etc.)
+- `demo.md` - Interactive demo page
 
 **Cloudflare Worker:**
 - `cloudflare-mcp-server/src/index.js` - Full MCP server implementation
@@ -127,10 +126,10 @@ Organized by: theme → array of hooks
 ## Contributing
 
 To add more content:
-1. Edit the appropriate JSON file in `_data/`
+1. Edit the appropriate JSON file in `data/`
 2. Follow the existing structure
-3. Commit and push (GitHub Actions will rebuild)
-4. Changes go live automatically
+3. Commit and push to GitHub
+4. Changes go live automatically on GitHub Pages
 
 ## License
 
