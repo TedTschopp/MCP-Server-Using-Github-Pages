@@ -13,7 +13,7 @@
    ```
 
 3. **View Site**
-   Open http://localhost:4000/MCP-Server-Using-Github-Pages/
+   Open http://localhost:4000/
 
 ## Deploy to GitHub Pages
 
@@ -33,7 +33,7 @@
 3. **Wait for Deployment**
    - Check the Actions tab for build status
    - Once complete, your site will be live at:
-     `https://tedtschopp.github.io/MCP-Server-Using-Github-Pages/`
+     `https://ttrpg-mcp.tedt.org/`
 
 ## Configure MCP Client
 
@@ -43,7 +43,7 @@ Once deployed, add this to your MCP client configuration (e.g., Claude Desktop):
 {
   "mcpServers": {
     "ttrpg-gm-tools": {
-      "url": "https://tedtschopp.github.io/MCP-Server-Using-Github-Pages/mcp.json",
+      "url": "https://ttrpg-mcp.tedt.org/mcp.json",
       "transport": "sse"
     }
   }

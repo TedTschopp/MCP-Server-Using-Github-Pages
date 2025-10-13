@@ -24,7 +24,7 @@ Add this to your MCP client configuration:
 {
   "mcpServers": {
     "ttrpg-gm-tools": {
-      "url": "https://tedtschopp.github.io/MCP-Server-Using-Github-Pages/mcp.json",
+      "url": "https://ttrpg-mcp.tedt.org/mcp.json",
       "transport": "sse"
     }
   }
@@ -36,7 +36,7 @@ Add this to your MCP client configuration:
 1. Clone this repository
 2. Install Jekyll: `gem install bundler jekyll`
 3. Run locally: `bundle exec jekyll serve`
-4. Visit: `http://localhost:4000/MCP-Server-Using-Github-Pages/`
+4. Visit: `http://localhost:4000/`
 
 ## 📁 Structure
 

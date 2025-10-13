@@ -1,8 +1,8 @@
 # Jekyll Configuration for MCP Server
 title: TTRPG GM Tools MCP Server
 description: A Model Context Protocol server for tabletop RPG game masters, hosted on GitHub Pages
-url: https://tedtschopp.github.io
-baseurl: /MCP-Server-Using-Github-Pages
+url: https://ttrpg-mcp.tedt.org
+baseurl: ""
 
 # GitHub repository (required for GitHub Pages)
 repository: TedTschopp/MCP-Server-Using-Github-Pages
