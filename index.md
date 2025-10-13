@@ -126,6 +126,7 @@ This server uses a hybrid architecture:
 
 ## 📖 Documentation
 
+- [🎮 Interactive Demo](demo.html) - Try the tools in your browser!
 - [Quick Start Guide](QUICKSTART.html) - Get started in 5 minutes
 - [Deployment Guide](DEPLOYMENT.html) - Deploy your own server
 - [Implementation Details](IMPLEMENTATION.html) - Technical architecture
