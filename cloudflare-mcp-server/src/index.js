@@ -206,7 +206,8 @@ async function handleMCPRequest(request) {
         serverInfo: {
           name: 'ttrpg-gm-tools',
           version: '1.0.0'
-        }
+        },
+        instructions: `TTRPG GM Tools MCP Server\n\nThis server provides procedural generation utilities and reference data for tabletop RPG session prep.\n\nAvailable Features:\n- Tools: Generate encounters, NPC names, location names, personality traits, treasure, weather, and plot hooks.\n- Resources: Read underlying JSON datasets (encounters, names, locations, traits, treasure, weather, plot hooks).\n- Prompts: High-level prompt templates (session_prep, quick_npc, dungeon_room).\n\nUsage Guidelines:\n1. List tools with 'tools/list' then call via 'tools/call' with required arguments. Input matching is case-insensitive (values are normalized).\n2. Use 'resources/read' to inspect raw datasets for context or custom logic.\n3. Prompts provide structured starting points—fetch with 'prompts/get' then expand.\n4. Randomness: Each generator selects uniformly from the relevant pool; treasure uses simple dice simulation.\n5. Error Handling: If a combination has no data (e.g., unsupported environment/difficulty), you'll receive an error object instead of content.\n\nRecommended Workflow Example:\n- Call tools/list\n- Call tools/call generate_encounter { level: 5, environment: 'forest', difficulty: 'medium' }\n- Call tools/call generate_npc_name { race: 'elf', gender: 'female' }\n- Call prompts/get session_prep { party_level: 5, session_theme: 'mystery' }\n\nNotes:\n- Data is sourced live from GitHub Pages (https://ttrpg-mcp.tedt.org/data).\n- Transport is stateless HTTP JSON-RPC 2.0.\n- Extend by adding new tool functions and updating tools/list schema.\n\nHave fun and may your dice roll high!`
       });
     
     case 'tools/list':

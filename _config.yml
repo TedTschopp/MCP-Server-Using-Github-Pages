@@ -24,9 +24,9 @@ heading_anchors: true
 # Navigation footer
 aux_links:
   "GitHub Repository":
-    - "https://github.com/TedTschopp/MCP-Server-Using-Github-Pages"
+  - "https://github.com/TedTschopp/MCP-Server-Using-Github-Pages"
   "Live Demo":
-    - "https://ttrpg-mcp.tedt.org/demo.html"
+  - "https://ttrpg-mcp.tedt.org/demo.html"
 
 # Footer content
 footer_content: "Built with ❤️ for Game Masters everywhere! 🎲"
