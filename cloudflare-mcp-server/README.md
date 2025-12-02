@@ -11,6 +11,10 @@ GitHub Pages can only serve static files. The MCP protocol requires a real serve
 
 This worker bridges that gap.
 
+
+
+
+
 ## Setup
 
 ### 1. Install Dependencies
